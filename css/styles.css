@@ -1,0 +1,22 @@
+body {
+  background-color: #59B570;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+img {
+   width: 374px;
+}
