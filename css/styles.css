@@ -1,7 +1,10 @@
-body {
+body, html {
   background-color: #59B570;
   font-family: 'Roboto', sans-serif;
   color: white;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -9,14 +12,56 @@ h1 {
   text-align: center;
 }
 
-.main-wrapper {
+nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  background: white;
+  padding: 75px;
+  border-bottom: 3px solid grey;
+}
+
+.heading-name {
+  color: #59B570;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.subheading {
+  display: flex;
+  justify-content: space-between;
+  color: #59B570;
+  font-size: 2.5em;
+
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  margin: 25px;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+
+}
+
+.bio {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  padding-top: 75px;
+  margin: 10vw;
 }
 
-img {
-   width: 374px;
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1em;
 }
