@@ -7,37 +7,309 @@ body, html {
   padding: 0px;
 }
 
+.spacer {
+  width: 100%;
+  height: 93px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  float: left;
+}
+
+
+.subheading {
+  color: #59b570;
+  font-size: 20px;
+  padding: 5px 20px;
+}
+
+
+a {
+  color: #59b570;
+}
+
+/* header */
+
+.header {
+  background-color: white;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  padding: 2px 20px;
+  text-decoration: none;
+  color: #59b570;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+/*
+IPHONE -----------------------------------------------------------------
+*/
 
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
-
-  h1 {
-    text-align: center;
-  }
-
-  nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    padding: 10px;
-
-  }
 
   .spacer {
     width: 100%;
     height: 93px;
   }
 
-  .heading-name {
-    color: #59B570;
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    float: left;
+  }
+
+
+  .subheading {
+    color: #59b570;
+    font-size: 20px;
+    padding: 5px 20px;
+  }
+
+
+  a {
+    color: #59b570;
+  }
+
+  /* header */
+
+  .header {
+    background-color: white;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 3;
+  }
+
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #f4f4f4;
+  }
+
+  .header .logo {
+    display: block;
+    padding: 2px 20px;
+    text-decoration: none;
+    color: #59b570;
     font-size: 40px;
     font-weight: 900;
+  }
+
+  /* menu */
+
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  /* menu icon */
+
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  /* menu btn */
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  /* 48em = 768px */
+
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
   }
 
   .subheading {
@@ -68,6 +340,55 @@ and (max-device-width : 480px) {
     margin: 10vw;
   }
 
+  .prof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+  }
+
+  .prof h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+
+  }
+
+  .years {
+    width: 40vw;
+    padding-right: 1vw;
+    }
+
+  .place {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-left: 1px solid white;
+  }
+
+  .addtnl {
+    font-size: 20px;
+  }
+
+  .place p {
+    margin-left: 10px;
+    text-align: left;
+  }
+
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   h2 {
     font-size: 30px;
   }
@@ -90,11 +411,7 @@ and (max-device-width : 480px) {
     margin-block-start: 0;
   }
 
-  .fa-user-graduate {
-    margin-top: 18px;
-  }
-
-  .position-statement, .academic-qualificaitons {
+  .position-statement {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,3 +420,7 @@ and (max-device-width : 480px) {
   }
 
 }
+
+/*
+IPAD -----------------------------------------------------------------
+*/
