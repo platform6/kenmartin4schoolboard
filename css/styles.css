@@ -151,10 +151,8 @@ IPHONE -----------------------------------------------------------------
 */
 
 @media only screen
-and (min-device-width : 320px)
+/* and (min-device-width : 320px) */
 and (max-device-width : 480px) {
-
-
 
   /* 48em = 768px */
 
@@ -195,7 +193,7 @@ and (max-device-width : 480px) {
 
   }
 
-  .bio {
+  .bio, .bio-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,5 +279,294 @@ and (max-device-width : 480px) {
     align-items: center;
     margin: 10vw;
   }
+
+}
+
+
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 768px) {
+
+  .subheading {
+    display: flex;
+    justify-content: space-between;
+    color: #59B570;
+    font-size: 20px;
+  }
+
+  .hero {
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw;
+    width: 45vw;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+  }
+
+  .bio-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    margin: 5vw;
+  }
+
+  .prof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+  }
+
+  .prof h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    width: 100%;
+
+  }
+
+  .years {
+    width: 40vw;
+    padding-right: 1vw;
+    }
+
+  .place {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-left: 1px solid white;
+  }
+
+  .addtnl {
+    font-size: 20px;
+  }
+
+  .place p {
+    margin-left: 10px;
+    text-align: left;
+  }
+
+
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  ul{
+    padding: 0;
+    margin-block-start: 0;
+  }
+  li {
+    margin: 2vw;
+  }
+
+  h3 {
+    text-align: left;
+
+  }
+
+  p {
+    font-size: 15px;
+    margin-block-start: 0;
+  }
+
+  .position-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vw;
+  }
+
+}
+
+@media only screen
+and (min-device-width : 769px) {
+
+  .subheading {
+    display: flex;
+    justify-content: space-between;
+    color: #59B570;
+    font-size: 10px;
+    padding: 5px 25px;
+
+  }
+
+  .spacer {
+    width: 100%;
+    height: 45px;
+  }
+
+
+  .header .logo {
+    display: block;
+    padding: 2px 25px;
+    text-decoration: none;
+    color: #59b570;
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .hero {
+    margin-right: 4vw;
+    margin-left: 4vw;
+
+  }
+
+ .headshot {
+   max-width: 150px;
+ }
+
+   img {
+  display: block;
+  max-width:500px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+
+  }
+
+
+  .bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+
+  .bio-top {
+    margin-top: -112px;
+    margin-right: 5vw;
+  }
+
+  .prof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+  }
+
+  .prof h3 {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    width: 100%;
+
+  }
+
+  .years {
+    width: 40vw;
+    padding-right: 1vw;
+    }
+
+  .place {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border-left: 1px solid white;
+  }
+
+  .addtnl {
+    font-size: 20px;
+  }
+
+  .place p {
+    margin-left: 10px;
+    text-align: left;
+  }
+
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  #top {
+  font-size: 24px;
+  margin-block-start: 0;
+  }
+
+  ul{
+    padding: 0;
+    margin-block-start: 0;
+  }
+  li {
+    margin: 2vw;
+  }
+
+  h3 {
+    text-align: left;
+
+  }
+
+  p {
+    font-size: 12px;
+    margin-block-start: 0;
+  }
+
+  .position-statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .flex-top-items{
+    display: flex;
+    flex-direction: row;
+    margin-top: 37px;
+  }
+
+  #music-note {
+    visibility: hidden;
+  }
+
+  /* #family {
+    width: 500px;
+    height: 1000px;
+  } */
 
 }
