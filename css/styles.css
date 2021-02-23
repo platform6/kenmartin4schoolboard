@@ -145,6 +145,29 @@ a {
   top: 0;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#email {
+  text-align: center;
+  bottom: 0;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  margin: 5px;
+}
+
+#req-sign {
+  text-align: center;
+  bottom: 0;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  margin: 5px;
+}
 
 /*
 IPHONE -----------------------------------------------------------------
