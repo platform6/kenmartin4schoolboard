@@ -125,7 +125,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 400px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -151,7 +151,7 @@ footer{
   flex-direction: column;
 }
 
-#email {
+#email, #req-sign {
   text-align: center;
   bottom: 0;
   color: white;
@@ -160,14 +160,6 @@ footer{
   margin: 5px;
 }
 
-#req-sign {
-  text-align: center;
-  bottom: 0;
-  color: white;
-  font-size: 30px;
-  padding: 10px;
-  margin: 5px;
-}
 
 /*
 IPHONE -----------------------------------------------------------------
