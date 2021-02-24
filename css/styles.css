@@ -527,6 +527,7 @@ and (min-device-width : 1025px) {
     width: 40vw;
     padding-right: 1vw;
     }
+    
 
   .place {
     display: flex;
