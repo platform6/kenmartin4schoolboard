@@ -1,5 +1,5 @@
 body, html {
-  background-color: #59B570;
+  background-color: #00863f;
   font-family: 'Roboto', sans-serif;
   color: white;
   width: 100%;
@@ -147,7 +147,7 @@ a {
 
 footer{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   align-items: center;
   background: white;
@@ -183,15 +183,28 @@ footer{
   margin-top: 25px;
 }
 
+#halter-family {
+  padding-bottom: 45px;
+}
+
+.picture-flex {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+}
+
+#ken-pup{
+  width:100%;
+}
+
+
+
 /*
 IPHONE -----------------------------------------------------------------
 */
 
-@media only screen
-/* and (min-device-width : 320px) */
-and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
 
-  /* 48em = 768px */
 
   @media (min-width: 48em) {
     .header li {
@@ -342,6 +355,29 @@ and (max-device-width : 480px) {
       margin-top:20px;
       }
 
+      .picture-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10vw;
+      }
+
+      .full-screen-flex-columns-pic {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: space-around;
+      }
+      
+      .full-screen-flex-section-pic {
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: center;
+       padding: 5vw;
+      
+      }
 
 }
 
@@ -527,9 +563,12 @@ and (min-device-width : 1025px) {
     padding: 2px 25px;
     text-decoration: none;
     color: #59b570;
-    font-size: 80px;
-    font-weight: 900;
-  }
+   }
+
+   #top-logo {
+    width: 200px;
+    height: 120px;
+   }
 
   .hero {
     margin-right: 4vw;
@@ -563,7 +602,7 @@ and (min-device-width : 1025px) {
   }
 
   .bio-top {
-    margin-top: -101px;
+    margin-top: -23px;
     margin-right: 5vw;
   }
 
@@ -624,7 +663,7 @@ and (min-device-width : 1025px) {
   }
 
   #top {
-  font-size: 80px;
+  font-size: 37px;
   margin-block-start: 0;
   margin-block-end: 4vh;
   margin-top: 10px
@@ -641,7 +680,7 @@ and (min-device-width : 1025px) {
   .center {
          text-align:center;
          width:100%;
-     }
+  }
 
   h3 {
     text-align: left;
@@ -673,18 +712,37 @@ and (min-device-width : 1025px) {
     display: none;
   }
 
-.full-screen-flex-columns {
-  display: flex;
-  flex-direction: row;
-}
+ .full-screen-flex-columns {
+   display: flex;
+   flex-direction: row;
+ }
 
 .full-screen-flex-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 1vw;
+  width: 33%;
 
 }
+
+
+.full-screen-flex-columns-pic {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  justify-content: space-around;
+}
+
+.full-screen-flex-section-pic {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ padding: 1vw;
+
+}
+
 
 .video-responsive{
     display: flex;
@@ -692,13 +750,11 @@ and (min-device-width : 1025px) {
     height: 315px;
     margin-top: 100px;
 }
+
 .video-responsive iframe{
     left:0;
     top:0;
     height:100%;
     width:100%;
-}
-
-
-
+ }
 }
