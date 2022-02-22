@@ -1,0 +1,5 @@
+[[redirects]]
+from = "https://www.kenmartin4schoolboard.com/*"
+to = "https://www.hatlermartin.com/:splat"
+status = 301
+force = true
