@@ -3,3 +3,10 @@ from = "https://www.kenmartin4schoolboard.com/*"
 to = "https://www.haltermartin.com/:splat"
 status = 301
 force = true
+
+
+[[redirects]]
+from = "https://www.kenmartin4schoolboard.com/prof.html"
+to = "https://www.haltermartin.com/"
+status = 301
+force = true
